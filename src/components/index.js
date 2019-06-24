@@ -1,0 +1,5 @@
+export { default as Button } from "./Button"
+export { default as Hero } from "./Hero"
+export { default as Image } from "./image"
+export { default as Info } from "./Info"
+export { default as SEO } from "./seo"

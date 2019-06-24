@@ -5,3 +5,14 @@
  */
 
 // You can delete this file if you're not using it
+const { GlobalStyles } = require("./src/styles")
+const React = require("react")
+
+exports.wrapRootElement = ({ element }) => {
+  return (
+    <>
+      <GlobalStyles />
+      {element}
+    </>
+  )
+}
