@@ -124,17 +124,51 @@ export const StyledInfo = styled.main`
   }
 `
 
-export const StyledSpeakers = styled.div`
+export const StyledSpeakers = styled.section`
+  box-sizing: border-box;
+  padding: 0 12%;
   display: flex;
+  text-align: center;
   justify-content: space-evenly;
   align-items: center;
+  flex-direction: column;
   width: 100%;
+  flex: 1;
   height: 100vh;
-  h2 {
-    align-self: flex-start;
-    color: #663399;
+  & .gatsby-image-wrapper {
+    width: 124px;
+    max-width: 250px;
+    height: 124px;
+    max-height: 250px;
   }
-  & > .gatsby-image-wrapper {
-    width: 250px;
+  article {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    h2 {
+      font-size: 1.1rem;
+      margin: 0;
+      font-weight: normal;
+    }
+    &:nth-child(2) h2 {
+      color: #ffd188;
+    }
+    &:nth-child(3) h2 {
+      color: #ffe76c;
+    }
+    &:nth-child(4) h2 {
+      color: #915fc3;
+    }
+    & small {
+      font-weight: 300;
+      color: #707070;
+      font-family: "Futura";
+    }
+  }
+  h2 {
+    justify-self: flex-end;
+    color: #663399;
+    margin: 0;
   }
 `
