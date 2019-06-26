@@ -13,6 +13,27 @@ export default ({ name }) => {
             }
           }
         }
+        quezada: file(relativePath: { eq: "quezada.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 250) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        kaufman: file(relativePath: { eq: "kaufman.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 250) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        rojas: file(relativePath: { eq: "rojas.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 250) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     `
   )

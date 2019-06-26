@@ -71,7 +71,7 @@ export const StyledButton = styled.button`
 export const StyledInfo = styled.main`
   padding: 30px 12%;
   text-align: center;
-  position: absolute;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -121,5 +121,20 @@ export const StyledInfo = styled.main`
   }
   & span {
     color: #ffb238;
+  }
+`
+
+export const StyledSpeakers = styled.div`
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  h2 {
+    align-self: flex-start;
+    color: #663399;
+  }
+  & > .gatsby-image-wrapper {
+    width: 250px;
   }
 `
