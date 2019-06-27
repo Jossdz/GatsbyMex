@@ -34,6 +34,12 @@ export const GlobalStyles = createGlobalStyle`
     margin: 0;
   }
 
+  a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
   ${above.large`
   `}
 `

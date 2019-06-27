@@ -195,6 +195,7 @@ export const StyledOrganizers = styled.section`
     h2 {
       font-size: 1.1rem;
       margin: 0.5rem 0 0;
+      color: #663399;
     }
     & small {
       font-weight: 300;
@@ -213,5 +214,24 @@ export const StyledOrganizers = styled.section`
     justify-self: flex-end;
     color: #ffb238;
     margin: 0;
+  }
+`
+
+export const StyledFooter = styled.footer`
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  div {
+    padding: 3rem 12%;
+    background-color: #663399;
+    background-image: url("https://i.postimg.cc/3N2mShMt/bubbles.png");
+    background-repeat: repeat;
+  }
+  nav {
+    background-color: #393939;
+    color: white;
+    ul {
+      list-style: none;
+    }
   }
 `
