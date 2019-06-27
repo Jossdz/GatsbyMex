@@ -7,6 +7,7 @@ export const StyledHero = styled.main`
   height: 100vh;
   background-color: #663399;
   height: 100vh;
+  min-height: 600px;
   background-image: url("https://i.postimg.cc/3N2mShMt/bubbles.png");
   background-repeat: repeat;
   & > div {
@@ -26,7 +27,7 @@ export const StyledHero = styled.main`
   }
   h2 {
     color: #73fff7;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     font-weight: 100;
   }
   p {
@@ -79,6 +80,7 @@ export const StyledInfo = styled.main`
   height: 100vh;
   box-sizing: border-box;
   overflow: hidden;
+  min-height: 600px;
   &::before {
     content: " ";
     background-image: url("https://i.postimg.cc/fLzjGgj8/graphql.png");
@@ -135,17 +137,18 @@ export const StyledSpeakers = styled.section`
   width: 100%;
   flex: 1;
   height: 100vh;
+  min-height: 600px;
   & .gatsby-image-wrapper {
     width: 124px;
-    max-width: 250px;
+    max-width: 200px;
     height: 124px;
-    max-height: 250px;
+    max-height: 200px;
   }
   article {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     h2 {
       font-size: 1.1rem;
       margin: 0;
