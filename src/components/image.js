@@ -34,6 +34,20 @@ export default ({ name }) => {
             }
           }
         }
+        nieva: file(relativePath: { eq: "nieva.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 250) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        correa: file(relativePath: { eq: "correa.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 250) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     `
   )

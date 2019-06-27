@@ -127,17 +127,17 @@ export const StyledInfo = styled.main`
 `
 
 export const StyledSpeakers = styled.section`
+  height: 100vh;
+  width: 100%;
+  min-height: 600px;
+  display: flex;
   box-sizing: border-box;
   padding: 0 12%;
-  display: flex;
   text-align: center;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
-  width: 100%;
-  flex: 1;
-  height: 100vh;
-  min-height: 600px;
+
   & .gatsby-image-wrapper {
     width: 124px;
     max-width: 200px;
@@ -152,7 +152,6 @@ export const StyledSpeakers = styled.section`
     h2 {
       font-size: 1.1rem;
       margin: 0;
-      font-weight: normal;
     }
     &:nth-child(2) h2 {
       color: #ffd188;
@@ -169,9 +168,50 @@ export const StyledSpeakers = styled.section`
       font-family: "Futura";
     }
   }
-  h2 {
+  & > h2 {
     justify-self: flex-end;
     color: #663399;
+    margin: 0;
+  }
+`
+
+export const StyledOrganizers = styled.section`
+  height: 100vh;
+  width: 100%;
+  min-height: 600px;
+  display: flex;
+  box-sizing: border-box;
+  padding: 0 12%;
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  article {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    h2 {
+      font-size: 1.1rem;
+      margin: 0.5rem 0 0;
+    }
+    & small {
+      font-weight: 300;
+      color: #707070;
+      font-family: "Futura";
+    }
+  }
+  & .gatsby-image-wrapper {
+    width: 124px;
+    max-width: 200px;
+    height: 124px;
+    max-height: 200px;
+    border-radius: 50%;
+  }
+  & > h2 {
+    justify-self: flex-end;
+    color: #ffb238;
     margin: 0;
   }
 `
