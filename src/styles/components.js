@@ -1,5 +1,5 @@
 import styled from "styled-components"
-
+import { above } from "./"
 export const StyledHero = styled.main`
   box-sizing: border-box;
   padding: 60px 12%;
@@ -48,6 +48,36 @@ export const StyledHero = styled.main`
   button {
     margin-top: 90px;
   }
+  ${above.large`
+    display: flex;
+    height: 60vh;
+    justify-content: space-around;
+    align-items: center;
+    & > div {
+      width:400px;
+    }
+    & #info{
+      display: flex;
+      justify-content: center;
+      align-items: end;
+      margin: 0;
+      h2{
+        font-size: 1.3rem;
+        margin: 0;
+      }
+      p{
+        font-size: 1rem;
+      }
+      a{
+        font-size: 1.1rem;
+      }
+      button{
+        margin-top: 30px;
+        align-self: center;
+      }
+    }
+
+  `}
 `
 
 export const StyledButton = styled.button`
@@ -221,17 +251,25 @@ export const StyledFooter = styled.footer`
   display: flex;
   box-sizing: border-box;
   flex-direction: column;
+
   div {
     padding: 3rem 12%;
     background-color: #663399;
     background-image: url("https://i.postimg.cc/3N2mShMt/bubbles.png");
     background-repeat: repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   nav {
     background-color: #393939;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     ul {
       list-style: none;
+      padding: 0;
     }
   }
 `
