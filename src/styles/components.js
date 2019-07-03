@@ -110,7 +110,7 @@ export const StyledInfo = styled.main`
   height: 100vh;
   box-sizing: border-box;
   overflow: hidden;
-  min-height: 500px;
+  min-height: 600px;
   &::before {
     content: " ";
     background-image: url("https://i.postimg.cc/fLzjGgj8/graphql.png");
@@ -158,7 +158,8 @@ export const StyledInfo = styled.main`
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    height: 10vh;
+    height: 50vh;
+    min-height: 0;
     div{
       width: 30%;
     }
@@ -219,7 +220,7 @@ export const StyledSpeakers = styled.section`
     &:nth-child(4) h2 {
       color: #915fc3;
     }
-    & small {
+    small {
       font-weight: 300;
       color: #707070;
       font-family: "Futura";
@@ -230,6 +231,30 @@ export const StyledSpeakers = styled.section`
     color: #663399;
     margin: 0;
   }
+  ${above.large`
+    position: relative;
+    flex-direction: row;
+    height: 50vh;
+    min-height: 0;
+    & > h2{
+      position: absolute;
+      top: 30px;
+      font-size: 1.8rem;
+    }
+    article h2 {
+      font-size: 1.3rem;
+    }
+    article small{
+      font-size: 0.9rem;
+    }
+    article:nth-child(odd){
+      flex-direction: column;
+    }
+    article:nth-child(even){
+      flex-direction: column-reverse;
+    }
+
+  `}
 `
 
 export const StyledOrganizers = styled.section`
