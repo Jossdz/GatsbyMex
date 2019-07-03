@@ -50,7 +50,7 @@ export const StyledHero = styled.main`
   }
   ${above.large`
     display: flex;
-    height: 60vh;
+    height: 80vh;
     justify-content: space-around;
     align-items: center;
     & > div {
@@ -110,7 +110,7 @@ export const StyledInfo = styled.main`
   height: 100vh;
   box-sizing: border-box;
   overflow: hidden;
-  min-height: 600px;
+  min-height: 500px;
   &::before {
     content: " ";
     background-image: url("https://i.postimg.cc/fLzjGgj8/graphql.png");
@@ -154,6 +154,33 @@ export const StyledInfo = styled.main`
   & span {
     color: #ffb238;
   }
+  ${above.large`
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 10vh;
+    div{
+      width: 30%;
+    }
+    & h2 {
+      font-size: 1.6rem;
+    }
+    & p {
+      font-size: 1rem;
+      color: #393939;
+    }
+    &::before {
+      width:200px;
+      height:200px;
+      left: -85px;
+      top: 10px;
+    }
+    &::after {
+      width:200px;
+      height: 200px;
+      right: -90px;
+    }
+  `}
 `
 
 export const StyledSpeakers = styled.section`
