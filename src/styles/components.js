@@ -297,6 +297,17 @@ export const StyledOrganizers = styled.section`
     color: #ffb238;
     margin: 0;
   }
+  ${above.large`
+    position:relative;
+    flex-direction: row;
+    height: 50vh;
+    min-height: 0;
+    & > h2{
+      position: absolute;
+      top: 30px;
+      font-size: 1.8rem;
+    }
+  `}
 `
 
 export const StyledFooter = styled.footer`
