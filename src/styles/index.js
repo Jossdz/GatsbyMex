@@ -39,7 +39,4 @@ export const GlobalStyles = createGlobalStyle`
     text-decoration: none;
     cursor: pointer;
   }
-
-  ${above.large`
-  `}
 `

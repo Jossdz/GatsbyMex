@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import { above } from "./"
+
 export const StyledHero = styled.main`
   box-sizing: border-box;
   padding: 60px 12%;
@@ -16,6 +17,13 @@ export const StyledHero = styled.main`
     align-items: flex-end;
     width: 100%;
     margin-bottom: 90px;
+  }
+  #info {
+    align-items: flex-start;
+
+    a {
+      width: 100%;
+    }
   }
   div > div {
     width: 100%;
@@ -315,6 +323,9 @@ export const StyledFooter = styled.footer`
   box-sizing: border-box;
   flex-direction: column;
 
+  a {
+    width: 100%;
+  }
   div {
     padding: 3rem 12%;
     background-color: #663399;
@@ -334,5 +345,75 @@ export const StyledFooter = styled.footer`
       list-style: none;
       padding: 0;
     }
+  }
+`
+
+export const AgendaList = styled.ul`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 75vh;
+  box-sizing: border-box;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0;
+  padding: 0 12%;
+  position: relative;
+  & > h2 {
+    justify-self: flex-end;
+    color: #5328ff;
+    margin: 0;
+  }
+  div {
+    width: 100%;
+    li {
+      margin: 5px 0;
+    }
+  }
+  & li {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 100%;
+    color: #323232;
+    font-size: 1.1rem;
+  }
+  &::before {
+    content: " ";
+    background-image: url("https://i.postimg.cc/wThL2kVn/back.png");
+    background-size: cover;
+    width: 380px;
+    height: 380px;
+    display: block;
+    position: absolute;
+    opacity: 0.25;
+    top: 30px;
+    left: -10px;
+  }
+  ${above.large`
+  height: 50vh;
+    & > h2{
+      position: absolute;
+      top: 30px;
+      font-size: 1.8rem;
+    }
+    div{
+      width: 28%;
+    }
+    & > li{
+      width: 28%;
+    }
+    flex-direction: row;
+    &::before {
+      width: 500px;
+    height: 500px;
+    }
+  `}
+`
+export const AgendaItem = styled.li`
+  margin: 0;
+
+  & span {
+    font-size: 0.9rem;
   }
 `
