@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby México meetup`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@jossdz && @mikenieva`,
+    title: `Gatsby Days CDMX`,
+    description: `Asiste a las conferencias para aprender a diseñar, desarrollar y desplegar aplicaciones modernas sobre el JAM stack. Contruye sitios y aplicaciones rápidas, seguras y sin servidores.`,
+    author: `@jossdz`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

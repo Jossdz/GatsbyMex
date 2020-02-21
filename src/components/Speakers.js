@@ -12,9 +12,8 @@ const Speakers = () => {
             Rodrigo <br />
             Quezada
           </h2>
-          <a href="#">
-            <small>@rodikana</small>
-          </a>
+
+          <small>@rodikana</small>
         </div>
         <Image name="quezada" />
       </article>
@@ -25,9 +24,8 @@ const Speakers = () => {
             Richard <br />
             Kaufman
           </h2>
-          <a href="#">
-            <small>@sparragus</small>
-          </a>
+
+          <small>@sparragus</small>
         </div>
       </article>
       <article>
@@ -36,9 +34,8 @@ const Speakers = () => {
             Yony <br />
             Rojas
           </h2>
-          <a href="#">
-            <small>@yony_dev</small>
-          </a>
+
+          <small>@yony_dev</small>
         </div>
         <Image name="rojas" />
       </article>

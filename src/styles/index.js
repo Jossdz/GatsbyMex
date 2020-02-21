@@ -2,7 +2,7 @@ import { css, createGlobalStyle } from "styled-components"
 
 export const size = {
   small: 400,
-  large: 1140,
+  large: 1000,
 }
 
 export const above = Object.keys(size).reduce((acc, label) => {

@@ -41,11 +41,12 @@ export const StyledHero = styled.main`
   p {
     color: white;
     font-weight: 100;
-    font-size: 0.8rem;
+    font-size: 1.2rem;
   }
   a {
     color: #ffdf37;
     text-decoration: none;
+    font-size: 1.1rem;
     cursor: pointer;
     small {
       svg {
@@ -91,7 +92,7 @@ export const StyledHero = styled.main`
 export const StyledButton = styled.button`
   width: 100%;
   display: block;
-  max-width: 320px;
+  ${props => (props.small ? `max-width: 350px;` : "")}
   padding: 1rem 3rem;
   border-radius: 13px;
   background-image: linear-gradient(91deg, #ffdf37, #fde97d);
@@ -145,7 +146,7 @@ export const StyledInfo = styled.main`
     font-size: 1.45rem;
   }
   & p {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     color: #393939;
   }
   & h2:nth-child(1) {
@@ -218,16 +219,9 @@ export const StyledSpeakers = styled.section`
     h2 {
       font-size: 1.1rem;
       margin: 0;
-    }
-    &:nth-child(2) h2 {
-      color: #ffd188;
-    }
-    &:nth-child(3) h2 {
-      color: #ffe76c;
-    }
-    &:nth-child(4) h2 {
       color: #915fc3;
     }
+
     small {
       font-weight: 300;
       color: #707070;
@@ -323,9 +317,6 @@ export const StyledFooter = styled.footer`
   box-sizing: border-box;
   flex-direction: column;
 
-  a {
-    width: 100%;
-  }
   div {
     padding: 3rem 12%;
     background-color: #663399;
@@ -334,6 +325,11 @@ export const StyledFooter = styled.footer`
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  div > a {
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
   nav {
     background-color: #393939;
@@ -359,9 +355,10 @@ export const AgendaList = styled.ul`
   margin: 0;
   padding: 0 12%;
   position: relative;
+  overflow: hidden;
   & > h2 {
     justify-self: flex-end;
-    color: #5328ff;
+    color: #663399;
     margin: 0;
   }
   div {
@@ -391,7 +388,7 @@ export const AgendaList = styled.ul`
     left: -10px;
   }
   ${above.large`
-  height: 50vh;
+  height: 55vh;
     & > h2{
       position: absolute;
       top: 30px;

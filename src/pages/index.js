@@ -13,7 +13,7 @@ import {
 const IndexPage = () => (
   <>
     <SEO
-      title="Gatsby Mexico meetup"
+      title="Gatsby Days Mexico City"
       description="Evento para conocer gatsby, la tecnología más moderna para generar sitios estáticos y la arquitectura moderna basada en javascript: JAM Stack."
     />
     <Hero />

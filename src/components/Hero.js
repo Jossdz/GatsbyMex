@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faMapMarkerAlt,
   faLongArrowAltRight,
+  faCalendarCheck,
 } from "@fortawesome/free-solid-svg-icons"
 import Button from "./Button"
 
@@ -13,12 +14,14 @@ const Hero = () => {
     <StyledHero>
       <div>
         <Image name="logo" />
-        <h1>México meetup</h1>
+        <h1>Ciudad de México</h1>
       </div>
       <div id="info">
         <h2>
+          <FontAwesomeIcon icon={faCalendarCheck} />
+          &nbsp; Marzo 21 &nbsp;
           <FontAwesomeIcon icon={faMapMarkerAlt} />
-          &nbsp; Agosto 17 · Ironhack Mex
+          &nbsp; Ironhack Mex
         </h2>
         <p>
           Asiste a las conferencias para aprender a diseñar, desarrollar y
@@ -30,7 +33,7 @@ const Hero = () => {
             Ver agenda <FontAwesomeIcon icon={faLongArrowAltRight} />
           </small>
         </a>
-        <a href="https://www.eventbrite.es/e/gatsby-mexico-tickets-64944088517?utm-medium=discovery&utm-campaign=social&utm-content=attendeeshare&aff=escb&utm-source=cp&utm-term=listing">
+        <a href="https://www.eventbrite.com/e/gatsby-days-mexico-city-tickets-90700576867?aff=">
           <Button text="Registro" />
         </a>
       </div>

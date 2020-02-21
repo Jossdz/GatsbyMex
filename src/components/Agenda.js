@@ -17,7 +17,7 @@ const Agenda = () => {
           </AgendaItem>
         </div>
         <AgendaItem>
-          Almuerzo por Gatsby <span>12:30 - 13:15</span>
+          Café y Snacks por Gatsby <span>12:30 - 13:15</span>
         </AgendaItem>
         <div>
           <AgendaItem>
