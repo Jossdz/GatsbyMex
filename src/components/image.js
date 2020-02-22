@@ -13,21 +13,28 @@ export default ({ name }) => {
             }
           }
         }
-        quezada: file(relativePath: { eq: "quezada.png" }) {
+        jesus: file(relativePath: { eq: "Jesus.jpeg" }) {
           childImageSharp {
             fluid(maxWidth: 250) {
               ...GatsbyImageSharpFluid
             }
           }
         }
-        kaufman: file(relativePath: { eq: "kaufman.png" }) {
+        bliss: file(relativePath: { eq: "bliss.jpeg" }) {
           childImageSharp {
             fluid(maxWidth: 250) {
               ...GatsbyImageSharpFluid
             }
           }
         }
-        rojas: file(relativePath: { eq: "rojas.png" }) {
+        diurivj: file(relativePath: { eq: "diurivj.jpeg" }) {
+          childImageSharp {
+            fluid(maxWidth: 250) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        emma: file(relativePath: { eq: "emma.jpeg" }) {
           childImageSharp {
             fluid(maxWidth: 250) {
               ...GatsbyImageSharpFluid

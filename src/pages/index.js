@@ -1,14 +1,6 @@
 import React from "react"
 
-import {
-  SEO,
-  Hero,
-  Info,
-  Speakers,
-  Organizers,
-  Footer,
-  Agenda,
-} from "../components"
+import { SEO, Hero, Info, Speakers, Footer, Agenda } from "../components"
 
 const IndexPage = () => (
   <>
@@ -20,7 +12,7 @@ const IndexPage = () => (
     <Info />
     <Agenda />
     <Speakers />
-    <Organizers />
+
     <Footer />
   </>
 )

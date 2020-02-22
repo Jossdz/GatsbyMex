@@ -210,6 +210,7 @@ export const StyledSpeakers = styled.section`
     max-width: 200px;
     height: 124px;
     max-height: 200px;
+    border-radius: 50%;
   }
   article {
     width: 100%;
@@ -255,7 +256,6 @@ export const StyledSpeakers = styled.section`
     article:nth-child(even){
       flex-direction: column-reverse;
     }
-
   `}
 `
 
@@ -410,7 +410,9 @@ export const AgendaList = styled.ul`
 export const AgendaItem = styled.li`
   margin: 0;
 
+  font-size: 0.9rem;
   & span {
-    font-size: 0.9rem;
+    font-size: 1rem;
+    font-weight: 900;
   }
 `

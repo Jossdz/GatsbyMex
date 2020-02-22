@@ -33,7 +33,7 @@ const Hero = () => {
             Ver agenda <FontAwesomeIcon icon={faLongArrowAltRight} />
           </small>
         </a>
-        <a href="https://www.eventbrite.com/e/gatsby-days-mexico-city-tickets-90700576867?aff=">
+        <a href="https://gatsbsday.boletia.com/">
           <Button text="Registro" />
         </a>
       </div>

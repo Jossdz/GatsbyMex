@@ -8,36 +8,88 @@ const Speakers = () => {
       <h2>Ponentes</h2>
       <article>
         <div>
-          <h2>
-            Rodrigo <br />
-            Quezada
-          </h2>
+          <a
+            rel="noopener noreferrer"
+            href="https://www.linkedin.com/in/jmolivas/"
+            target="_blank"
+          >
+            <h2>
+              Jesus <br />
+              Olivas
+            </h2>
 
-          <small>@rodikana</small>
+            <small>@jmolivas</small>
+          </a>
         </div>
-        <Image name="quezada" />
+        <Image name="jesus" />
       </article>
       <article>
-        <Image name="kaufman" />
+        <Image name="bliss" />
         <div>
-          <h2>
-            Richard <br />
-            Kaufman
-          </h2>
+          <a
+            rel="noopener noreferrer"
+            href="https://www.linkedin.com/in/hectorbliss/"
+            target="_blank"
+          >
+            <h2>
+              Hector <br />
+              Bliss
+            </h2>
 
-          <small>@sparragus</small>
+            <small>@HectorBlisS</small>
+          </a>
         </div>
       </article>
       <article>
         <div>
-          <h2>
-            Yony <br />
-            Rojas
-          </h2>
+          <a
+            rel="noopener noreferrer"
+            href="https://www.linkedin.com/in/diurivj"
+            target="_blank"
+          >
+            <h2>
+              Diego <br />
+              Vazquez
+            </h2>
 
-          <small>@yony_dev</small>
+            <small>@diurivj</small>
+          </a>
         </div>
-        <Image name="rojas" />
+        <Image name="diurivj" />
+      </article>
+      <article>
+        <Image name="correa" />
+        <div>
+          <a
+            rel="noopener noreferrer"
+            href="https://www.linkedin.com/in/jossdz"
+            target="_blank"
+          >
+            <h2>
+              Joss <br />
+              Correa
+            </h2>
+
+            <small>@jossdz</small>
+          </a>
+        </div>
+      </article>
+      <article>
+        <div>
+          <a
+            rel="noopener noreferrer"
+            href="https://www.linkedin.com/in/salemm-jugr"
+            target="_blank"
+          >
+            <h2>
+              Emmanuel <br />
+              Juárez
+            </h2>
+
+            <small>@salemm-jugr</small>
+          </a>
+        </div>
+        <Image name="emma" />
       </article>
     </StyledSpeakers>
   )
