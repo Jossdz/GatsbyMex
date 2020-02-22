@@ -55,7 +55,7 @@ export const StyledHero = styled.main`
     }
   }
   button {
-    margin-top: 90px;
+    margin-top: 10px;
   }
   ${above.large`
     display: flex;
