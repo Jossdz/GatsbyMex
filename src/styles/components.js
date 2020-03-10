@@ -5,18 +5,20 @@ export const StyledHero = styled.main`
   box-sizing: border-box;
   padding: 60px 12%;
   width: 100%;
+  min-height: 750px;
   height: 100vh;
   background-color: #663399;
   height: 100vh;
-  min-height: 600px;
+
   background-image: url("https://i.postimg.cc/3N2mShMt/bubbles.png");
   background-repeat: repeat;
   & > div {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: flex-end;
     width: 100%;
-    margin-bottom: 90px;
+    margin-bottom: 60px;
   }
   #info {
     align-items: flex-start;
@@ -59,7 +61,7 @@ export const StyledHero = styled.main`
   }
   ${above.large`
     display: flex;
-    height: 80vh;
+    height: 100vh;
     justify-content: space-around;
     align-items: center;
     & > div {
@@ -194,7 +196,6 @@ export const StyledInfo = styled.main`
 `
 
 export const StyledSpeakers = styled.section`
-  height: 100vh;
   width: 100%;
   min-height: 600px;
   display: flex;
@@ -204,7 +205,7 @@ export const StyledSpeakers = styled.section`
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
-
+  margin: 30px 0;
   & .gatsby-image-wrapper {
     width: 124px;
     max-width: 200px;
@@ -348,7 +349,7 @@ export const AgendaList = styled.ul`
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 75vh;
+  height: 100vh;
   box-sizing: border-box;
   justify-content: space-evenly;
   align-items: center;
@@ -411,8 +412,38 @@ export const AgendaItem = styled.li`
   margin: 0;
 
   font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  padding: 5px;
+  background-color: ${props =>
+    props.type === "conference"
+      ? "rgba(246,178,62, 0.3)"
+      : props.type === "workshop"
+      ? "rgba(102,51,153, 0.3)"
+      : "none"};
   & span {
     font-size: 1rem;
     font-weight: 900;
+  }
+`
+
+export const AgendaInfo = styled.div`
+  padding: 0 12%;
+  display: inline-block;
+  p::before {
+    content: " ";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: ${props =>
+      props.type === "conference"
+        ? "rgba(246,178,62, 0.7)"
+        : props.type === "workshop"
+        ? "rgba(102,51,153, 0.7)"
+        : "none"};
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 10px;
   }
 `
